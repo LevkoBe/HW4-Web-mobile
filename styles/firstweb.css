@@ -5,13 +5,25 @@
 
 .input-container input[type="text"] {
   padding-left: 30px;
+  padding-right: 40px;
 }
 
 .input-container .fa-magnifying-glass {
   position: absolute;
-  top: 50%;
+  top: 3px;
   left: 5px;
-  transform: translateY(-50%);
   color: #aaa;
+  cursor: pointer;
+}
+
+.input-container .search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 10px;
+  background-color: #333;
+  color: white;
+  border: none;
   cursor: pointer;
 }
