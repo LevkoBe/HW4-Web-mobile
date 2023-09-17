@@ -3,17 +3,15 @@
   display: inline-block;
 }
 
-/* Style for the input field */
 .input-container input[type="text"] {
-  padding-left: 30px; /* Ensure some space for the icon on the left */
+  padding-left: 30px;
 }
 
-/* Style for the magnifying glass icon */
 .input-container .fa-magnifying-glass {
   position: absolute;
   top: 50%;
-  left: 5px; /* Adjust the distance from the left side */
+  left: 5px;
   transform: translateY(-50%);
-  color: #aaa; /* Adjust the color as needed */
+  color: #aaa;
   cursor: pointer;
 }
