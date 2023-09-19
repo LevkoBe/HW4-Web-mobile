@@ -2,7 +2,7 @@ input {
   border-radius: 50px;
   border: 1px solid #cdcdcd;
   background-color: #fff;
-  color: #cdcdcd;
+  color: #808080;
   width: 100%;
   font-size: 16px;
   font-weight: 500;
@@ -12,6 +12,3 @@ input {
   margin: 10px;
 }
 /* Add suggestions... */
-input:active {
-  border: 1px solid #cdcdcd;
-}
