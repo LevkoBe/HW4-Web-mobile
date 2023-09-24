@@ -7,15 +7,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
     />
-    <link rel="stylesheet" href="styles/firstweb.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
     <link rel="stylesheet" href="styles/inputs.css" />
     <link rel="stylesheet" href="styles/search.css" />
     <link rel="stylesheet" href="styles/divs.css" />
     <script src="scripts\FAQ-Button.js"></script>
+    <script src="scripts\search-dropdown.js"></script>
   </head>
   <body>
     <header>
+      <div style="margin: 10px">
+        <img
+          src="https://res.cloudinary.com/dbkotg0js/image/upload/v1695564731/web_needs/Icon_eowci4.png"
+          alt="P"
+        />
+        <span style="font-size: 24px; font-weight: 600">HeyPractice</span>
+      </div>
       <nav>
         <div class="buttons">
           <button>Home</button>
@@ -28,8 +36,10 @@
     </header>
 
     <main>
-      <h1>Hi! I am a <span style="color: #129afe">responsive</span> site</h1>
-      <p>
+      <h1 style="margin: 20px">
+        Hi! I am a <span style="color: #129afe">responsive</span> site
+      </h1>
+      <p style="margin: 20px">
         Please check out Mozilla dev tools on responsive design
         <a
           style="text-decoration: none; color: rgb(158, 98, 19)"
@@ -37,10 +47,26 @@
           >https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design</a
         >
       </p>
-      <div class="search-container">
-        <i class="fas fa-search fa-magnifying-glass"></i>
-        <input type="text" class="search-input" placeholder="Enter here" />
-        <button class="search-button">Search</button>
+      <div id="large-search-container">
+        <div class="search-container">
+          <i class="fas fa-search fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="dropdown-input"
+            class="search-input"
+            placeholder="Enter here"
+          />
+          <button class="search-button">Search</button>
+        </div>
+        <ul id="dropdown-list">
+          <li>Who is the Responsive</li>
+          <li>What means "adaptive"</li>
+          <li>Flexboxes</li>
+          <li>CSS grids</li>
+          <li style="color: #129afe">
+            See 5+ results <i class="fa-solid fa-arrow-right"></i>
+          </li>
+        </ul>
       </div>
 
       <div class="main-6">
@@ -85,9 +111,15 @@
         <img
           src="https://res.cloudinary.com/dbkotg0js/image/upload/v1695542491/web_needs/Emoji_ml9bh5.png"
           alt="FAQ"
+          style="width: fit-content"
         />
+
         <h1>Frequently asked questions</h1>
-        <button id="FAQ-button-1">Who is Responsive Design?</button>
+
+        <div id="FAQ-button-1" class="question">
+          <h3>Who is Responsive Design?</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
         <div class="FAQ-answer" id="answer-1">
           <p>
             Eget varius congue pellentesque ut porta tempus morbi arcu. Cursus
@@ -96,38 +128,117 @@
           </p>
         </div>
         <hr />
-        <button id="FAQ-button-2">What is your question?</button>
+
+        <div id="FAQ-button-2" class="question">
+          <h3>
+            Tellus, ante viverra facilisis pellentesque feugiat urna fusce
+            molestie amet?
+          </h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
         <div class="FAQ-answer" id="answer-2">
-          <p>What is your question?</p>
+          <p>
+            Eget varius congue pellentesque ut porta tempus morbi arcu. Cursus
+            odio facilisis feugiat nec in mi. Odio interdum nisi, sit ultrices
+            amet, leo integer nibh non.
+          </p>
         </div>
         <hr />
-        <button id="FAQ-button-3">What took me so long?</button>
+
+        <div id="FAQ-button-3" class="question">
+          <h3>
+            Euismod nisl viverra eget pretium, tellus donec pretium tellus?
+          </h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
         <div class="FAQ-answer" id="answer-3">
           <p>
-            Maybe, burnout. Honestly, I don't know. I just broke (hopefully, for
-            a few days only).
+            Eget varius congue pellentesque ut porta tempus morbi arcu. Cursus
+            odio facilisis feugiat nec in mi. Odio interdum nisi, sit ultrices
+            amet, leo integer nibh non.
           </p>
         </div>
         <hr />
-        <button id="FAQ-button-4">How I feel?</button>
+
+        <div id="FAQ-button-4" class="question">
+          <h3>
+            Sit venenatis facilisis phasellus massa vel ullamcorper quisque
+            mauris?
+          </h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
         <div class="FAQ-answer" id="answer-4">
           <p>
-            It's a feeling when you should explore something new, but at the
-            same time you are late, and the only option left is to run through
-            all this (interesting) stuff, trying to understand it and use
-            properly.
+            Eget varius congue pellentesque ut porta tempus morbi arcu. Cursus
+            odio facilisis feugiat nec in mi. Odio interdum nisi, sit ultrices
+            amet, leo integer nibh non.
           </p>
         </div>
+        <hr />
       </div>
     </main>
+
     <footer>
       <img
-        src="https://res.cloudinary.com/dbkotg0js/image/upload/v1695554328/web_needs/web-2_oyejfz.png"
+        src="https://res.cloudinary.com/dbkotg0js/image/upload/v1695563064/web_needs/web-22_nve38n.png"
         alt="Some bird should have been here..."
         style="width: 100%"
       />
       <div id="contact-us">
         <h1>Can't find the answer you are looking for?</h1>
+        <button>Contact us</button>
+      </div>
+      <div id="contact-divs">
+        <div class="contact-div">
+          <img
+            src="https://res.cloudinary.com/dbkotg0js/image/upload/v1695564731/web_needs/Icon_eowci4.png"
+            alt="P"
+          />
+          <p>Responsive design is very cool!</p>
+          <button><i class="fa-solid fa-globe"></i>EN</button>
+        </div>
+        <div class="contact-div">
+          <h3>Features</h3>
+          <p>Team & Single Training</p>
+          <p>Expert Content</p>
+          <p>TNext-level AI-Software</p>
+          <p>Reports</p>
+          <p>Attention</p>
+        </div>
+        <div class="contact-div">
+          <h3>Pages</h3>
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+        <div class="contact-div">
+          <h3>Keep up to date</h3>
+          <div class="search-container">
+            <i class="fas fa-search fa-magnifying-glass"></i>
+            <input
+              type="text"
+              class="search-input"
+              style="background-color: transparent"
+              placeholder="Enter your email"
+            />
+            <button class="search-button">Notify me</button>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i
+          ><i class="fa-solid fa-arrow-right"></i
+          ><i class="fa-solid fa-arrow-right"></i
+          ><i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          width: 300px;
+        "
+      >
+        <p>© 2022 HeyPractice</p>
+        <p>Privacy policy</p>
       </div>
     </footer>
   </body>

@@ -4,11 +4,12 @@
   gap: 1rem;
   width: 80%;
   justify-content: center;
+  margin: 20px;
 }
 
 .block-6 {
-  background-color: rgb(156, 136, 110);
-  border: 3px solid rgb(107, 86, 60);
+  background-color: #fafbfc;
+  border: 3px double #cecece;
   border-radius: 10px;
   height: fit-content;
   padding: 10%;
@@ -16,11 +17,42 @@
 
 #FAQ {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
+  margin: 20px;
 }
 
 #contact-us {
   background-color: #000d40;
-  color: bisque;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-divs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.contact-div {
+  padding: 5px;
+  margin: 5px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  padding: 5px;
+  margin: 5px;
+}
+
+.answer {
+  padding: 5px;
+  margin: 5px;
 }

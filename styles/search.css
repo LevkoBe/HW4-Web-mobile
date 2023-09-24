@@ -4,6 +4,8 @@
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .fa-search {
@@ -17,7 +19,7 @@
   outline: none;
   padding: 5px;
   border-radius: 50px;
-  background: transparent;
+  background: white;
   margin: 0px;
 }
 
@@ -29,4 +31,24 @@
   cursor: pointer;
   padding: 10px;
   margin: 0px;
+}
+
+#large-search-container {
+  position: relative;
+  margin: 20px;
+}
+
+#dropdown-list {
+  list-style: none;
+  position: absolute;
+  background-color: #fff;
+  display: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#dropdown-list li {
+  padding: 5px;
 }

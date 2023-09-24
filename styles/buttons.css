@@ -2,8 +2,7 @@ button {
   border-radius: 20px;
   border: 1px solid #129afe;
   font-size: 14px;
-  font-weight: 500;
-  font-family: "Acme";
+  font-weight: 700;
   padding: 10px;
   margin: 10px;
 }
@@ -41,5 +40,5 @@ button:active {
 .FAQ-answer {
   display: none;
   background-color: white;
-  color: lightgray;
+  color: rgb(84, 84, 84);
 }
