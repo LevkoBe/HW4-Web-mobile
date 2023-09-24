@@ -1,6 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-image: url(https://res.cloudinary.com/dbkotg0js/image/upload/v1694990201/web-shot-2_oexbkh.png);
-  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #000d40;
+  color: bisque;
 }
 
 i {
@@ -9,4 +25,8 @@ i {
 
 a {
   color: #0e537e;
+}
+hr {
+  width: 100%;
+  color: lightgray;
 }

@@ -33,3 +33,13 @@ button:active {
   cursor: pointer;
   background: white;
 }
+
+#FAQ-button-1:active {
+  color: #129afe;
+}
+
+.FAQ-answer {
+  display: none;
+  background-color: white;
+  color: lightgray;
+}

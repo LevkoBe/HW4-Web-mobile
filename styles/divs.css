@@ -13,3 +13,14 @@
   height: fit-content;
   padding: 10%;
 }
+
+#FAQ {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#contact-us {
+  background-color: #000d40;
+  color: bisque;
+}
