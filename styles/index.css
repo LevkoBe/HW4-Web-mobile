@@ -10,15 +10,22 @@ body {
 
 header {
   display: flex;
+  background-color: white;
+  border-bottom: #000d40;
+  border-width: 2px;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 main {
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px;
 }
 
 footer {
