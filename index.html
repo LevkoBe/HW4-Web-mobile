@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/inputs.css" />
     <link rel="stylesheet" href="styles/search.css" />
     <link rel="stylesheet" href="styles/divs.css" />
+    <link rel="stylesheet" href="styles\small-width.css" />
     <script src="scripts\FAQ-Button.js"></script>
     <script src="scripts\search-dropdown.js"></script>
   </head>
@@ -22,15 +23,18 @@
           src="https://res.cloudinary.com/dbkotg0js/image/upload/v1695564731/web_needs/Icon_eowci4.png"
           alt="P"
         />
-        <span style="font-size: 24px; font-weight: 600">HeyPractice</span>
+        <span style="font-size: 24px; font-weight: 600" class="disappear"
+          >HeyPractice</span
+        >
       </div>
       <nav>
         <div class="buttons">
-          <button>Home</button>
-          <button>FAQ</button>
-          <button>About us</button>
-          <button><i class="fa-solid fa-globe"></i>EN</button>
+          <button class="disappear">Home</button>
+          <button class="disappear">FAQ</button>
+          <button class="disappear">About us</button>
+          <button class="disappear"><i class="fa-solid fa-globe"></i>EN</button>
           <button>Notify me</button>
+          <button class="appear"><i class="fa-solid fa-bars"></i></button>
         </div>
       </nav>
     </header>
@@ -185,7 +189,9 @@
         style="width: 100%"
       />
       <div id="contact-us">
-        <h1>Can't find the answer you are looking for?</h1>
+        <h1 style="padding: 10px">
+          Can't find the answer you are looking for?
+        </h1>
         <button>Contact us</button>
       </div>
       <div id="contact-divs">

@@ -1,0 +1,21 @@
+.appear {
+  display: none;
+}
+.disappear {
+  display: initial;
+}
+
+@media screen and (max-width: 500px) {
+  .appear {
+    display: initial;
+  }
+  .disappear {
+    display: none;
+  }
+  .main-6 {
+    grid-template-columns: 1fr;
+  }
+  #contact-divs {
+    flex-direction: column;
+  }
+}
